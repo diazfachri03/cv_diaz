@@ -7,9 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <style>
     *{margin:0;padding:0;box-sizing:border-box}
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
     body{
       font-family:'Poppins',sans-serif;
       background:#0b0b0b;
@@ -134,8 +132,8 @@
       transform:translateY(0);
     }
 
-    /* PORTFOLIO GRID */
-    .portfolio-grid{
+    /* PORTOFOLIO GRID (kata: portofolio) */
+    .portofolio-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
       gap:20px;
@@ -175,7 +173,8 @@
   <nav>
     <a href="#about">Tentang</a>
     <a href="#skills">Skill</a>
-    <a href="#portfolio">Portfolio</a>
+    <!-- href diperbaiki jadi #portofolio -->
+    <a href="#portofolio">Portofolio</a>
     <a href="#contact">Kontak</a>
   </nav>
 
@@ -183,7 +182,8 @@
     <h1>DIAZ FACHRI NOVANDI</h1>
     <p>Inovatif. Kreatif. Nge-pop.</p>
     <div>
-      <button class="btn btn-ghost" onclick="location.href='#portfolio'">Portfolio</button>
+      <!-- tombol juga diarahkan ke #portofolio -->
+      <button class="btn btn-ghost" onclick="location.href='#portofolio'">Portofolio</button>
       <button class="btn btn-accent" onclick="location.href='#contact'">Kontak</button>
     </div>
   </header>
@@ -205,11 +205,12 @@
     <p id="skill-desc"></p>
   </section>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
+  <!-- ID dan penggunaan kata diseragamkan: portofolio -->
+  <section id="portofolio">
+    <h2>Portofolio</h2>
     <p>Beberapa hasil karya desain yang pernah saya buat:</p>
 
-    <div class="portfolio-grid">
+    <div class="portofolio-grid">
       <div class="card">
         <img src="IMG_8841.jpg" alt="Mural">
         <h3>Mural</h3>
